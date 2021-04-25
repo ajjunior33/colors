@@ -1,38 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+.buttonSuccess{
+    color:#F1F1F1;
+    background-color: #2ecc71;
+    transition: 0.7s ;
+}
+.buttonSuccess:hover{
+    background-color:#27ae60;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.problems{
+    display: flex;
+    flex-direction: row;
+}
+.problems a{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+header {
+  padding: 10px;
+  width: 980px;
+  margin: 0 auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-items: center;
+}
+
+header > form {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+header > form > input {
+  height: 60px;
+  border: 0;
+  width: 280px;
 }
 
-.App-link {
-  color: #61dafb;
+header > form > button {
+  height: 58px;
+  border: 0;
+  padding: 0 40px;
+  margin-left: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  width: 980px;
+  margin: 0 auto;
+}
+
+section > .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section > article {
+  text-align: justify;
+  margin-left: 20px;
+}
+
+section > main{
+    
+    text-align: center;
+    padding: 40px 0;
+}
+section > main > h1{
+    font-size: 3em;
 }
