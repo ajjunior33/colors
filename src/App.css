@@ -8,28 +8,27 @@
 }
 
 .App {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
-.buttonSuccess{
-    color:#F1F1F1;
-    background-color: #2ecc71;
-    transition: 0.7s ;
+.buttonSuccess {
+  color: #f1f1f1;
+  background-color: #2ecc71;
+  transition: 0.7s;
 }
-.buttonSuccess:hover{
-    background-color:#27ae60;
+.buttonSuccess:hover {
+  background-color: #27ae60;
 }
 
-.problems{
-    display: flex;
-    flex-direction: row;
+.problems {
+  display: flex;
+  flex-direction: row;
 }
-.problems a{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 18px;
+.problems a {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 18px;
 }
 
 header {
@@ -72,16 +71,35 @@ section > .content {
   grid-template-columns: 1fr 1fr;
 }
 
-section > article {
+section > .content > article {
   text-align: justify;
+  padding: 15px;
   margin-left: 20px;
+  margin-top: 30px;
+}
+section > .content > article > p {
+  text-indent: 15px;
 }
 
-section > main{
-    
-    text-align: center;
-    padding: 40px 0;
+section > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
 }
-section > main > h1{
-    font-size: 3em;
+section > main > h1 {
+  font-size: 3em;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+footer a{
+  margin-top:8px;
 }
